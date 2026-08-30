@@ -100,4 +100,26 @@ int main () {
 }
 
 
+-----------------------
+array er modhe 10 ta shonka nie ave ber kora using user defined function 
+
+#include<stdio.h>
+float avg(int arr[], int n)
+{
+    int sum = 0;
+    for(int i =0; i < n ; i++){
+        sum += arr[i];
+    }
+
+    return sum*1.0 / n;
+}
+int main(){
+    int n = 5;
+    int arr[n]; 
+    for(int i = 0 ; i < n; i++ ){
+        scanf("%d", &arr[i]);
+    }
+    float av = avg(arr, n);
+    printf("%f", av);
+}
 
