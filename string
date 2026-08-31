@@ -1,0 +1,30 @@
+#include<stdio.h>
+
+int i = 0;
+    int v = 0;
+    int c = 0;
+void toggleVowels (char *str)
+
+{
+
+    for(i = 0 ; str[i] != '\0'; i++){
+        char ch = tolower(str[i]);
+        if(ch>= 'a' && ch <='z')
+        if(ch == 'a' || ch == 'e' || ch == 'i' || ch == 'u' || ch == 'o'){
+            v += 1;
+        }
+        else if(! (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'u' || ch == 'o')) {
+            c +=1;
+        }
+
+    }
+    printf("%d \n", v);
+    printf("%d%", c);
+}
+
+
+int main () {
+    char myString[2];
+    gets(myString);
+    toggleVowels(myString);
+}
