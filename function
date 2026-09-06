@@ -125,3 +125,23 @@ int main(){
     printf("%f", av);
 }
 
+
+
+----------------------------------
+swaping two given value
+
+#include<stdio.h>
+int a ,b, temp ;
+int swap(int *a , int *b){
+   temp = *a;
+   *a = *b;
+   *b = temp;
+}
+
+int main(){
+   scanf("%d%d", &a, &b);
+    swap(&a, &b);
+    printf("%d %d", a, b);
+}
+
+
